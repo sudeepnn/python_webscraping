@@ -1,0 +1,11 @@
+from docx import Document
+doc = Document()
+doc.add_heading("Invitation", 0)
+doc.add_paragraph("You are cordially invited to attend")
+doc.add_paragraph("Event Name: Birthday Party")
+doc.add_paragraph("Date: January 1, 2022")
+doc.add_paragraph("Time: 7:00 PM")
+doc.add_paragraph("Location: 123 Main Street, Anytown USA")
+doc.add_paragraph("We would be delighted to have you celebrate with us on this special occasion.")
+doc.add_paragraph("Please RSVP by December 15, 2021")
+doc.save("invitation.docx")
